@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in to TinyTreasures</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="icon" href="/static/images/favicon.png">
+    //<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="background">
+    <h1><img src="/static/images/favicon.png" alt="">TinyTreasures</h1>
+    <div class="email">
+        <form action="/submit-login" method="GET">
+            <label for="email">Enter the email address</label>
+            <input class="mail" type="email" id="email" placeholder="email address" name="email" required>
+    </div>
+    <div class="password">
+            <label for="password">Enter the password</label>
+            <input class="pass" type="password" id="password" placeholder="enter the password" name="pass" required>
+    </div>
+    <div class="forgot">
+        <a href="forgot password">forgot password</a>
+        <p class="invalid">{{msg}}</p>
+    </div>
+    <div class="submit">
+            <input type="submit" value="Submit">
+    </div>
+        </form>
+    <div class="dont">
+        <h2>Create an account <a href="signup">signup</a></h2>
+    </div>
+    </body>
+</html>

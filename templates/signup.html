@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="icon" href="/static/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+</head>
+<body class="background">
+    <h1><img src="/static/images/favicon.png" alt="">TinyTreasures</h1>
+    <div class="name">
+        <form action="/submit-form" method="post">
+            <label for="name">Enter your name</label>
+            <input class="yname" required name="name" type="text" placeholder="your name">
+    </div>
+    <div class="gender">
+    <p class="para">Enter your gender</p>
+    <div class="inp"><label>
+        <input type="radio" name="gender" value="female" required>female <br>
+    </label>
+    <label>
+        <input type="radio" name="gender" value="male" required>male <br>
+    </label>
+     <label>
+        <input type="radio" name="gender" value="other" required>other
+     </label></div>
+    </div>
+    <div class="signupem">
+            <label for="gmail">Enter your email address</label>
+            <input type="email" name="email" class="smail" placeholder="email address" required>
+    </div>
+    <p class="comb">should be combination of numbers(0-9) and letters(a-z,A-Z)</p>
+    <div class="user">
+            <label for="username">Create a username</label>
+            <input class="us" name="username" type="text" placeholder="enter a username" required>
+    </div>
+    <div class="signpass">
+            <label for="password">Enter a password</label>
+            <input class="passin" name="password1" type="password" placeholder="enter a password" required>
+    </div>
+    <div class="confirm">
+            <label for="confirm">Confirm the password</label>
+            <input class="con" name="password2" type="password" placeholder="confirm password" required>
+            <p class="try">{{msg}}</p>
+    </div>
+    <div class="upsubmit">
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+    <div class="do">
+        <h2>Do have an account <a href="signin">login</a></h1>
+    </div>
+</body>
+</html>
